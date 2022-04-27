@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family:'black' ;
+    src: url(Black\ Mustang.ttf);
+}
+
+body {
+    background-image: linear-gradient(45deg, #FFE9A6, #F2D785);
+    
+}
+main {
+    background-color: white;
+    width: 600px; 
+    padding: 10px;  
+    border-radius: 10%;     /*Width é largura, padding espaçamento, wight é peso e height é altura*/
+    margin: auto;
+    box-shadow: 5px 5px 5px #A68F4B;
+}
+p {
+  text-align: justify;
+  font-family: 'work sans', sans-serif;
+  font-style: italic;  
+  font-weight: 300;
+  font-size: 1em;
+  /*font= font style --> font weight --> font size --> font family*/
+}
+h1 {
+    text-align: center;
+    color: #A68F4B;
+    text-shadow: 1px 1px 0px #A68F4B;
+    font: italic 400 2em 'black', sans-serif;
+    /*font= font style --> font weight --> font size --> font family*/
+
+}
+h2 {
+    color: #8599F2;
+    font-size: 20px;      /*Na font size sempre usamos px e em, 1 em é o tamanho original das letras*/
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HMTL</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tenta abrir essa imagem em varios dispositivos</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem variavél">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Audios em HMTL5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <p>Seu navegador não consegue rodar o áudio, clica <a href="midia/musica.mp3">aqui</a> para fazer o download do áudio.</p>
+    </audio> 
+      
+  
+
+</body>
+</html>
