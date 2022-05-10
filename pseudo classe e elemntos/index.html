@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgrey;
+            text-align: center;
+            height: 200px;                                
+            width: 200px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px black;
+        }
+        div#div1 > p{
+              display: none;    
+        }
+        div:hover > p{
+            background-color: black;
+            color: white;
+            display: block;
+        }
+        div#div2 > p{
+              display: none;    
+        }
+        div#div3 > p{
+              display: none;    
+        }
+        div:hover{
+            background-color: aqua;
+        }
+        div#escondido > p{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>1 <p>texto escondido!!!</p></div>
+    <div id="div2">2 <p>outro texto escondido!!!</p></div>
+    <div id="div3">3 <p>omg outro, parabéns</p></div>
+    <div id="escondido">passe o mouse aqui
+        <p>Texto escondido!!!</p>
+    </div>
+</body>
+</html>

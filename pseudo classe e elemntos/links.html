@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            font-weight: bold;      /*decoration tira aquela barra que tem embaixo do link*/
+            text-decoration: none;
+            text-shadow: 1px 0px 0px red;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: blue;
+        }
+        a::after{
+            content: '[link]';
+            font-weight: normal;
+            text-decoration: none;
+            color:darkgray;
+        }
+        h1{
+            height: 50px;
+            width: 350px;
+            background-color: brown;
+            padding: 0%;
+            text-align: center;
+            box-shadow: 1px 1px 1px darkred; 
+            margin: auto;  
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1:hover{
+            color: wheat;
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/ViniciusAlbanit">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do Yt</a></li>
+        <li><a href="htpps://www.cursoemvideo.com">Site Curso em video</a></li>
+    </ul>
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4NKOQFMdc7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+   
+   
+</body>
+</html>
