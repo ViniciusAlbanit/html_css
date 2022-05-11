@@ -11,12 +11,21 @@
         }
         table{
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 1.5em;
             font-weight: bold;
             background-color: lightgray;
             padding: 8px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
         td, th{
             width: 300px;
