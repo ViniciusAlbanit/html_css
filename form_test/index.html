@@ -5,16 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <style>
-        #linguagens{
-            border: 1px solid black;
-            padding-left: 10px;
-        }
-    </style>
 </head>
 <body id="corpo">
     <h1>Dados para o Contato</h1>
-    <form action="Contato">
+    <form action="Contato" method="post">
         <label for="idname">Nome completo:</label> <br>
         <input type="text" name="name" id="idname" placeholder="Vinicius Farias Albanit"> <br>
         <label for="idemail">Email:</label> <br>
@@ -26,30 +20,33 @@
             <option value="">Sistemas Digitais</option>
         </select>
         <br> <br> <div id="linguagens">
-        <p>Quais linguagens você conhece?</p> <br>
-            <input type="checkbox" name="lingua" class="lin" id="idlingua"><label for="idlingua">PHP</label> <br>
-            <input type="checkbox" name="lingua" class="lin" id="idlingua2"> <label for="idlingua2">JavaScript</label> <br>
-            <input type="checkbox" name="lingua" class="lin" id="idlingua3"><label for="idlingua3">Ruby</label> <br>
-            <input type="checkbox" name="lingua" class="lin" id="idlingua4"> <label for="idlingua4">Python</label><br>
-            <input type="checkbox" name="lingua" class="lin" id="idlingua5"><label for="idlingua5">Java</label><br>
-            <input type="checkbox" name="lingua" class="lin" id="idlingua6"><label for="idlingua6">C++</label><br>
+        <fieldset>
+            <legend>Quais linguagens você conhece?</legend> <br>
+                <input type="checkbox" name="lingua" class="lin" id="idlingua"><label for="idlingua">PHP</label> <br>
+                <input type="checkbox" name="lingua" class="lin" id="idlingua2"> <label for="idlingua2">JavaScript</label> <br>
+                <input type="checkbox" name="lingua" class="lin" id="idlingua3"><label for="idlingua3">Ruby</label> <br>
+                <input type="checkbox" name="lingua" class="lin" id="idlingua4"> <label for="idlingua4">Python</label><br>
+                <input type="checkbox" name="lingua" class="lin" id="idlingua5"><label for="idlingua5">Java</label><br>
+                <input type="checkbox" name="lingua" class="lin" id="idlingua6"><label for="idlingua6">C++</label><br>
+        </fieldset>
             
         </div>
         <br>
         <div id="linguagens">
-            <p>Onde você conheceu o cursinho web?</p>
-        
-            <input type="radio" name="conheceu" class="conhe" id="idamigos">
-            <label for="idamigos">Amigos</label>
-            <br>
-            <input type="radio" name="conheceu" class="conhe" id="idgoogle" checked>
-            <label for="idgoogle">Google</label>
-            <br>
-            <input type="radio" name="conheceu" class="conhe" id="idyoutube">
-            <label for="idyoutube">Youtube</label>
-            <br>
-            <input type="radio" name="conheceu" class="conhe" id="idinsta">
-            <label for="idinsta">Instagram</label>
+            <fieldset>
+                <legend>Onde você conheceu o cursinho web?</legend>
+                <input type="radio" name="conheceu" class="conhe" id="idamigos">
+                <label for="idamigos">Amigos</label>
+                <br>
+                <input type="radio" name="conheceu" class="conhe" id="idgoogle" checked>
+                <label for="idgoogle">Google</label>
+                <br>
+                <input type="radio" name="conheceu" class="conhe" id="idyoutube">
+                <label for="idyoutube">Youtube</label>
+                <br>
+                <input type="radio" name="conheceu" class="conhe" id="idinsta">
+                <label for="idinsta">Instagram</label>
+            </fieldset>
         </div>
         <BR></BR>
         <input type="reset" value="Voltar">  <input type="submit" value="Enviar">
