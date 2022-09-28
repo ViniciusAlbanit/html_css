@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+        
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: orange; 
+                
+                transition-property: width, height;
+                transition-duration: 1s, 2s;
+                transition-timing-function: cubic-bezier(.67,-0.38,.5,1.5);
+                transition-delay: 0s, .2s;
+                overflow: hidden;
+            }
+            div p#descricao{
+                display: none;
+            }
+            div:hover{
+                width: 300px;
+                height: 200px;
+            }
+            div:hover p#descricao{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>estrutura basica</h1>
+        
+        <div>1
+            <p>HTML</p>
+            <p id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, delectus ratione. Consequuntur ipsa necessitatibus expedita nulla praesentium nemo, nostrum nihil porro sint repellendus provident delectus quidem laudantium, maxime ipsum blanditiis.</p>
+        </div>
+    </body>
+</html>
